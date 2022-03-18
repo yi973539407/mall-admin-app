@@ -62,6 +62,7 @@ export default {
         if (valid) {
           api.login(this.LoginForm).then((res) => {
             console.log(res);
+            this.$store.dispatch('setUserInfo', res);
             this.$router.push({
               name: 'Home',
             });
