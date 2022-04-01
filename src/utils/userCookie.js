@@ -1,3 +1,4 @@
+// 用来写cookie的
 import Cookies from 'js-cookie';
 
 export function setCookie(info) {
